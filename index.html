@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Underground Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div class="centered-container">
+
+        <div id="title">
+            <span>
+                welcome to the underground club
+            </span>
+        </div>
+
+        <main>
+            <p>
+                I decide who gets in and who doesn't. As of now, no names are permitted.
+                <br>
+                Enter a word or phrase and I'll tell you if they're allowed in.
+            </p>
+
+            <div class="input-group">
+                <input type="text" id="guess" placeholder="Type your guess here">
+                <button id="submitButton">Submit</button>
+            </div>
+
+            <!-- Display error messages here if given bad input -->
+            <div id="error" style="color: red; display: none;"></div>
+
+            <!-- Previously guessed words will accumulate dynamically -->
+            <div class="word-list">
+                <div id="allowed-list">
+                    <h2>Allowed</h2>
+
+                </div>
+                <div id="not-allowed-list">
+                    <h2>Not Allowed</h2>
+                </div>
+            </div>
+
+            <button id="resetButton">Reset</button>
+
+            <div class="about">
+                <h2>About this game</h2>
+                <p>
+                    The underground club is a devious little riddle.
+                    Can you figure out which guests can enter?
+                    <b>Hint:</b> There"s a reason it"s called the underground club.
+                </p>
+            </div>
+
+            <!-- Credits -->
+            <div class="credits">
+                <p>Created by Dominic LeDuc</p>
+                <a href="https://github.com/DominicL3" target="_blank">GitHub source</a>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- Use type="module" to indicate that this script is an ECMAScript module -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

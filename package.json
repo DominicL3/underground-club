@@ -1,0 +1,12 @@
+{
+  "name": "underground-club",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A riddle to find out who's permitted to enter the Underground Club",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Dominic LeDuc",
+  "license": "MIT"
+}
