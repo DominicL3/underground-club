@@ -123,22 +123,6 @@ main {
     /* flex-grow: 1; */
 }
 
-button {
-    padding: 10px;
-    background-color: #1c92d2;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-    font-size: medium;
-    min-width: 15%;
-}
-
-button:hover {
-    background-color: #555;
-}
-
 input {
     padding: 12px;
     border: none;
@@ -174,6 +158,44 @@ input {
     border-radius: 5px;
     font-family: "Lora", serif;
     text-align: center;
+}
+
+/* Button style adapted from Tailwind button 40 at CSS Scan
+https://getcssscan.com/css-buttons-examples
+*/
+button {
+    background-color: #121922;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: medium;
+    font-weight: 550;
+    line-height: 1.0rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+button:hover {
+    background-color: #374151;
+}
+
+button:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 #resetButton {
