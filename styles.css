@@ -124,12 +124,31 @@ main {
 }
 
 input {
-    padding: 12px;
-    border: none;
-    margin-right: 5%;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    padding: 0   12px;
+    text-align: left;
     flex-grow: 1;
+    margin-right: 5%;
+    transition-property: box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #39414D;
+    color: #272C34;
+    cursor: text;
+    font-size: 14px;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input:focus {
+    transition-property: border-color, box-shadow, background;
+    border-color: #39414D;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    outline: 0px;
 }
 
 .input-group {
