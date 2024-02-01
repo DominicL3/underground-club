@@ -11,11 +11,18 @@ test("verify-valid-guesses", () => {
     // Test case: Valid guess with another allowed letter ("y")
     assert.strictEqual(verifyGuess("ordinary words"), true);
 
+    assert.strictEqual(verifyGuess("PottY"), false);
+    assert.strictEqual(verifyGuess("pottY"), true);
+    assert.strictEqual(verifyGuess("Potty"), true);
+
     assert.strictEqual(verifyGuess("not allowed into the club"), false);
     assert.strictEqual(verifyGuess("allowed into the underground club"), true);
 
     assert.strictEqual(verifyGuess("jobless humans"), true);
     assert.strictEqual(verifyGuess("Jovial humans"), false);
+
+    assert.strictEqual(verifyGuess("a fine gentleman"), true);
+    assert.strictEqual(verifyGuess("A fine Gentleman"), false);
 })
 
 test("kings-and-queens-case", () => {
@@ -45,6 +52,12 @@ test("verify-invalid-guesses", () => {
         new Error("Enter a word longer than one character."));
     assert.throws(() => verifyGuess("%"),
         new Error("Enter a word longer than one character."));
+
+    // Tests that we error out on single-character words that aren't "a" or "i"
+    assert.throws(() => verifyGuess("Regular b in the house"),
+        new Error("Invalid word: b"));
+    assert.throws(() => verifyGuess("queen h"),
+        new Error("Invalid word: h"));
 
     // Non-alphabetical characters should also raise errors
     assert.throws(() => verifyGuess("A load of 2 pizzas"),

@@ -47,8 +47,7 @@ function submitGuess() {
         var isAllowed = verifyGuess(guess);
     } catch (error) {
         // Display the error message in the error box
-        errorBox.textContent = error.message;
-        errorBox.style.display = "block"; // Make the error box visible
+        showErrorUnderInputBox(error.message);
         return;
     }
 
@@ -96,7 +95,10 @@ function verifyGuess(guess) {
 
     for (let i = 0; i < guessWords.length; i++) {
         // Error out if word is not in the English dictionary
-        if (!englishWords.check(guessWords[i].toLowerCase())) {
+        let validEnglish = englishWords.check(guessWords[i].toLowerCase());
+        let onlyOneChar = guessWords[i].length === 1 && !["a", "i"].includes(guessWords[i].toLowerCase());
+
+        if (!validEnglish || onlyOneChar) {
             throw new Error("Invalid word: " + guessWords[i]);
         }
 
@@ -117,7 +119,10 @@ function verifyGuess(guess) {
 function addToWordList(word, listId) {
     // Only add to the word list if it doesn't exist already
     var wordList = getWordList(listId);
+
     if (wordList.includes(word)) {
+        // Display the error message in the error box
+        showErrorUnderInputBox("This entry has already been added.");
         return;
     }
 
@@ -172,6 +177,17 @@ function resetLists() {
     // Clear the stored cookies
     document.cookie = "allowed-list=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     document.cookie = "not-allowed-list=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+/**
+ * Displays an error message under the input box.
+ * @param {string} message  Error message to display.
+ * @returns {void}
+ */
+function showErrorUnderInputBox(message) {
+    var errorBox = document.getElementById("error");
+    errorBox.textContent = message;
+    errorBox.style.display = "block";
 }
 
 export { verifyGuess }
