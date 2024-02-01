@@ -51,9 +51,8 @@ function submitGuess() {
         return;
     }
 
-    // If needed, clear and hide error box
+    // If needed, clear space with error message
     errorBox.textContent = "";
-    errorBox.style.display = "none";
 
     // Add word to allowed/not allowed list
     if (isAllowed) {
