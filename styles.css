@@ -109,10 +109,11 @@ main {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
     border-radius: 8px;
     position: relative;
+    transition: all 0.5s ease;
     /* flex-grow: 1; */
 }
 
@@ -131,8 +132,9 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    font-size: small;
 }
 
 button:hover {
