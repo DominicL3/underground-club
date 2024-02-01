@@ -153,6 +153,11 @@ input {
     margin-right: 10px;
 }
 
+#error {
+    color: red;
+    min-height: 20px;
+}
+
 .word-list {
     display: flex;
     justify-content: space-between;
