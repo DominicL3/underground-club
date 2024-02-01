@@ -1,26 +1,29 @@
-# Project Name
+# 🤫 The Underground Club 🕳️🎶
 
-A brief description of the project.
+Play here: [underground-club.xyz](https://underground-club.xyz)
 
-## Table of Contents
+The Underground Club is a web-based riddle. Users are asked to input a word or phrase, and the game will tell them if their guess would be allowed into the Underground Club.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+I first learned of this devious little game on a ski trip where it took me 1.5 days to solve. Now I bring this pain to you.
 
-## Installation
+There is no end state for the game yet, because you "win" by figuring out the rule. Maybe you can hook up an LLM to verify you've got the rule but that seems like overkill.
 
-Instructions on how to install and set up the project.
+### Recommended: visit the site on a computer, I haven't learned how to optimize it for mobile yet.
 
-## Usage
+## Project Structure
 
-Instructions on how to use the project and any relevant examples.
+Written with vanilla HTML, Javascript, and CSS, and deployed to Cloudflare Pages. I have very little experience in webdev, so this code is super spaghetti 🍝
 
-## Contributing
+## Inspect source
+If you do this, you're a loser.
 
-Guidelines for contributing to the project.
+## Acknowledgements
+* Parallax stars background by [MattMarble](https://codepen.io/mattmarble/pen/qBdamQz)
+* Button and text box designs adapted from [Copy & Paste CSS](https://copy-paste-css.com)
+* Dominic Navarro for introducing this game to me, because two Dom's _are_ better than one
 
-## License
+## Future Improvements
 
-Information about the project's license.
+* Better hints
+* Allowing users to enter names
+* Termination condition so you feel satisfied for winning
