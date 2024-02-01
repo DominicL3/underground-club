@@ -233,5 +233,5 @@ button:focus {
 
 /* Set hyperlinks to a specific color regardless if visited or not */
 a {
-    color: blue;
+    color: inherit;
 }
