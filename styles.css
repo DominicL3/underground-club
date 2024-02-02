@@ -5,6 +5,16 @@
 Parallax stars background by MattMarble
 https://codepen.io/mattmarble/pen/qBdamQz
 */
+#star-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* This ensures the star container is behind other content */
+}
+
 #stars {
     width: 1px;
     height: 1px;
