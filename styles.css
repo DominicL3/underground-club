@@ -127,7 +127,7 @@ main {
 }
 
 input {
-    padding: 0 5%;
+    padding: 0 1em;
     text-align: left;
     flex-grow: 1;
     margin-right: 20px;
@@ -140,7 +140,7 @@ input {
     border-color: #39414D;
     color: #272C34;
     cursor: text;
-    font-size: 14px;
+    font-size: 0.85em;
     line-height: 2rem;
     letter-spacing: 0px;
     font-weight: 400;
@@ -164,7 +164,7 @@ input:focus {
 #error {
     color: #cc0033;
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.85em;
     height: 20px;
     margin: 2px 0px 8px 8px;
 }
@@ -194,10 +194,10 @@ button {
     cursor: pointer;
     flex: 0 0 auto;
     font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: medium;
+    font-size: 0.85em;
     font-weight: 550;
     line-height: 1.0rem;
-    padding: .75rem 1.2rem;
+    padding: .75em 1.2em;
     text-align: center;
     text-decoration: none #6B7280 solid;
     text-decoration-thickness: auto;
