@@ -90,15 +90,12 @@ h2 {
 #title {
     position: relative;
     top: 30px;
-    left: 0;
-    right: 0;
     color: #FFF;
     text-align: center;
     font-family: "Lora", serif;
     font-weight: 300;
     font-size: 40px;
     letter-spacing: 10px;
-    padding-left: 10px;
     margin-bottom: 65px;
 }
 #title span {
