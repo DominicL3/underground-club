@@ -82,6 +82,9 @@ h2 {
     height: 95%;
     overflow: auto; /* This will allow scrolling */
     vertical-align: middle;
+    /* Define a minimum margin */
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #title {
@@ -156,7 +159,6 @@ input:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 18px;
 }
 
 #error {
@@ -235,4 +237,24 @@ button:focus {
 /* Set hyperlinks to a specific color regardless if visited or not */
 a {
     color: inherit;
+}
+
+/* Make style adjustments for mobile devices */
+@media (max-width: 600px) {
+    /* Set the title to a percentage of the view window for mobile */
+    #title {
+        font-size: 7vw;
+        letter-spacing: 1.5vw;
+    }
+
+    /* Set all fonts to a percentage of the view window for mobile */
+    body {
+        font-size: 3.5vw;
+    }
+
+    /* Make the word lists smaller */
+    .word-list div {
+        width: 45%;
+        padding: 1vw;
+    }
 }
