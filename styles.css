@@ -156,13 +156,15 @@ input:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 18px;
 }
 
 #error {
-    color: red;
-    min-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: #cc0033;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    margin: 2px 0px 8px 8px;
 }
 
 .word-list {
