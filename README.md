@@ -8,8 +8,6 @@ I first learned of this devious little game on a ski trip where it took me 1.5 d
 
 There is no end state for the game yet, because you "win" by figuring out the rule. Maybe you can hook up an LLM to verify you've got the rule but that seems like overkill.
 
-### Recommended: visit the site on a computer, I haven't learned how to optimize it for mobile yet.
-
 ## Project Structure
 
 Written with vanilla HTML, Javascript, and CSS, and deployed to Cloudflare Pages. I have very little experience in webdev, so this code is super spaghetti 🍝
