@@ -6,11 +6,11 @@ Parallax stars background by MattMarble
 https://codepen.io/mattmarble/pen/qBdamQz
 */
 #star-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     z-index: -1; /* This ensures the star container is behind other content */
 }
@@ -76,25 +76,17 @@ https://codepen.io/mattmarble/pen/qBdamQz
     }
 }
 
-/* END parallax stars background */
-
 html {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
 }
 
+/* END parallax stars background */
+
 h2 {
     font-family: "Lora", serif;
     text-align: center;
-}
-.centered-container {
-    height: 95%;
-    overflow: auto; /* This will allow scrolling */
-    vertical-align: middle;
-    /* Define a minimum margin */
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 #title {
@@ -116,11 +108,10 @@ h2 {
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    padding: 0;
-    margin: 0;
+    position: relative;
     height: 100vh;
-    overflow: hidden; /* This will prevent scrolling */
+    font-family: 'Noto Sans', sans-serif;
+    overflow-y: scroll; /* This will prevent scrolling */
 }
 
 main {
