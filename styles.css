@@ -112,7 +112,7 @@ body {
     padding: 0 3%;
     height: 100vh;
     font-family: 'Noto Sans', sans-serif;
-    overflow-y: scroll; /* This will prevent scrolling */
+    overflow-y: scroll; /* This allows scrolling */
 }
 
 main {
@@ -222,10 +222,6 @@ button:focus {
 #resetButton {
     display: block;
     margin: 20px auto;
-}
-
-.about {
-    margin-top: 20px;
 }
 
 .credits {
