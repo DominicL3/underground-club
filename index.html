@@ -17,63 +17,60 @@
         <div id="stars3"></div>
     </div>
 
-    <div class="centered-container">
+    <div id="title">
+        <span>
+            welcome to the underground club
+        </span>
+    </div>
 
-        <div id="title">
-            <span>
-                welcome to the underground club
-            </span>
+    <main>
+        <div class="about">
+            <h2>About this riddle</h2>
+            <p>
+                The underground club only lets in guests with a simple rule.
+                Can you figure out who can enter?
+            </p>
         </div>
 
-        <main>
-            <div class="about">
-                <h2>About this riddle</h2>
-                <p>
-                    The underground club only lets in guests with a simple rule.
-                    Can you figure out who can enter?
-                </p>
+        <p>
+            Enter a word or phrase and I'll tell you if they're allowed in.
+            As of now, no names are permitted.
+        </p>
+
+        <p>
+            <strong>Hint:</strong> There's a reason it's called the
+            <i>underground</i> club.
+        </p>
+
+        <div class="input-group">
+            <input type="text" id="guess" autocorrect="off" autocapitalize="off" placeholder="Type your guess here">
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <!-- Display error messages here if given bad input -->
+        <div id="error"></div>
+
+        <!-- Previously guessed words will accumulate dynamically -->
+        <div class="word-list">
+            <div id="allowed-list">
+                <h2>Allowed</h2>
             </div>
 
-            <p>
-                Enter a word or phrase and I'll tell you if they're allowed in.
-                As of now, no names are permitted.
-            </p>
-
-            <p>
-                <strong>Hint:</strong> There's a reason it's called the
-                <i>underground</i> club.
-            </p>
-
-            <div class="input-group">
-                <input type="text" id="guess" autocorrect="off" autocapitalize="off" placeholder="Type your guess here">
-                <button id="submitButton">Submit</button>
+            <div id="not-allowed-list">
+                <h2>Not Allowed</h2>
             </div>
+        </div>
 
-            <!-- Display error messages here if given bad input -->
-            <div id="error"></div>
+        <button id="resetButton">Reset</button>
 
-            <!-- Previously guessed words will accumulate dynamically -->
-            <div class="word-list">
-                <div id="allowed-list">
-                    <h2>Allowed</h2>
-                </div>
-
-                <div id="not-allowed-list">
-                    <h2>Not Allowed</h2>
-                </div>
-            </div>
-
-            <button id="resetButton">Reset</button>
-
-            <!-- Credits -->
-            <div class="credits">
-                <p>Created by Dominic LeDuc</p>
-                <a href="https://github.com/DominicL3/underground-club/tree/master" target="_blank">
-                    <i class="fa fa-github" style="font-size:30px"></i>
-                </a>
-            </div>
-        </main>
-    </div>
+        <!-- Credits -->
+        <div class="credits">
+            <p>Created by Dominic LeDuc</p>
+            <a href="https://github.com/DominicL3/underground-club/tree/master" target="_blank">
+                <i class="fa fa-github" style="font-size:30px"></i>
+            </a>
+        </div>
+    </main>
 
     <!-- Use type="module" to indicate that this script is an ECMAScript module -->
     <script type="module" src="app.js"></script>
